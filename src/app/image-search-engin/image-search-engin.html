@@ -1,0 +1,15 @@
+<div class="header-div">
+<h1>Image Search App</h1>
+</div>
+
+<form id="form-input-field" (ngSubmit)="search()">
+  <input type="text" id="input-field" [(ngModel)]="inputText" name="searchInput"  placeholder="Search Any Thing Here...">
+  <button id="search-btn" type="submit">Search</button>
+</form>
+<div id="img-section-div">
+   <a *ngFor="let image of showImages" [href]="image.link" target="_blank">
+    <img [src]="image.img">
+   </a>
+</div>
+<button id="shw-more-btn" *ngIf="showImages.length>0" type="button" (click)="moreImg()">Show More</button>
+
