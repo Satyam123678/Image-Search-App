@@ -10,12 +10,4 @@ body {
     background: linear-gradient(135deg, #141e30, #243b55);
     
 }
-.form{
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    height: 80px;
-    background: #434989;
-    display: flex;
-    align-items: center; 
-}
+
